@@ -42,14 +42,13 @@ def main():
     
     # getting the input data from the user
     
-    
     Pregnancies = st.text_input('Number of Pregnancies')
     Glucose = st.text_input('Glucose Level')
-    BloodPressure = st.text_input('Blood Pressure value')
-    SkinThickness = st.text_input('Skin Thickness value')
+    BloodPressure = st.text_input('Blood Pressure Value')
+    SkinThickness = st.text_input('Skin Thickness Value')
     Insulin = st.text_input('Insulin Level')
-    BMI = st.text_input('BMI value')
-    DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+    BMI = st.text_input('BMI Value')
+    DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function Value')
     Age = st.text_input('Age of the Person')
     
     
@@ -70,18 +69,3 @@ def main():
     
 if __name__ == '__main__':
     main()
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    
-  
