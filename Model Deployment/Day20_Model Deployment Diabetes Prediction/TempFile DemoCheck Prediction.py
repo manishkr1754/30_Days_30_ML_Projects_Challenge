@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-TempFile DemoCheck Prediction
+TempFile DemoCheck
 """
 
 import numpy as np

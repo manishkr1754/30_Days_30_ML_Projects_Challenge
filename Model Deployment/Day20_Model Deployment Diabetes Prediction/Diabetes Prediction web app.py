@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov 18 19:15:01 2021
-
-@author: siddhardhan
+Diabetes Prediction Web App
 """
 
 import numpy as np
@@ -11,7 +9,7 @@ import streamlit as st
 
 
 # loading the saved model
-loaded_model = pickle.load(open('D:/Work/Machine Learning/Deploying Machine Learning model/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('C:/Users/manis/OneDrive/Desktop/30ML Challenge/Model Deployment/Day20_Model Deployment Diabetes Prediction/LogisticRegression_model.pkl', 'rb'))
 
 
 # creating a function for Prediction
