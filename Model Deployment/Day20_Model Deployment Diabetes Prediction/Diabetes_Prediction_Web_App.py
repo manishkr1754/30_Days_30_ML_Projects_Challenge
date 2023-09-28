@@ -52,20 +52,29 @@ def main():
     Age = st.text_input('Age of the Person')
     
     
-    # code for Prediction
+        # code for Prediction
     diagnosis = ''
-    
+
     # creating a button for Prediction
-    
+
     if st.button('Diabetes Test Result'):
-        diagnosis = diabetes_prediction([Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age])
-        
-        
+        try:
+            # Convert input data to floating-point numbers with error handling
+            input_data = [
+                float(Pregnancies),
+                float(Glucose),
+                float(BloodPressure),
+                float(SkinThickness),
+                float(Insulin),
+                float(BMI),
+                float(DiabetesPedigreeFunction),
+                float(Age)
+            ]
+            diagnosis = diabetes_prediction(input_data)
+        except ValueError as e:
+            diagnosis = "Invalid input. Please enter numeric values for all fields."
+
     st.success(diagnosis)
-    
-    
-    
-    
-    
+
 if __name__ == '__main__':
     main()
